@@ -16,12 +16,18 @@ export const fetchGitHubRepos = async (): Promise<GitHubRepository[]> => {
       },
     });
 
-    return response.data.map((repo: any) => ({
+    logger.info(`Response status: ${response.status}`);
+
+    const repos = response.data.map((repo: any) => ({
       id: repo.id,
       node_id: repo.node_id,
       name: repo.name,
       full_name: repo.full_name,
     }));
+
+    logger.info(`Fetched ${repos.length} repositories`);
+
+    return repos;
     
   } catch (error) {
     logger.error('Request error:', error);
