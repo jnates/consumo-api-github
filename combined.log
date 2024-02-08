@@ -12,3 +12,14 @@
 {"level":"info","message":"Express server listening on port 3000"}
 {"level":"info","message":"Response status: 200"}
 {"level":"info","message":"Fetched 10 repositories"}
+{"level":"info","message":"Express server listening on port 3000"}
+{"level":"info","message":"GET /get-github"}
+{"level":"info","message":"Response status: 200"}
+{"level":"info","message":"Fetched 10 repositories"}
+{"level":"info","message":"Sent 10 GitHub repositories"}
+{"level":"info","message":"Express server listening on port 3000"}
+{"level":"info","message":"GET /get-github"}
+{"level":"info","message":"Response status: 200"}
+{"level":"info","message":"Fetched 10 repositories"}
+{"level":"info","message":"Sent 10 GitHub repositories"}
+{"0":".allstar","1":".github","2":"0x0g-2018-badge","3":"aarch64-esr-decoder","4":"aarch64-paging","5":"abpackage","6":"abseil-cpp-binary","7":"abstracttext","8":"abstreet","9":"acai","level":"info","message":"GitHub repositories:"}

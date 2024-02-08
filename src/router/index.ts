@@ -11,6 +11,8 @@ const githubRepoRouter = (): Router => {
         logger.info('GET /get-github');
         const topRepos = await fetchGitHubRepos();
         logger.info(`Sent ${topRepos.length} GitHub repositories`);
+        const repoNames = topRepos.map(repo => repo.name);
+        logger.info('GitHub repositories:', repoNames);
         res.json(topRepos);
       } catch (error) {
         logger.error(`Error while fetching GitHub repositories: ${error}`);
